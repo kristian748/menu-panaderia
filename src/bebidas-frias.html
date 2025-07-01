@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Mismo head que index.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panes | El Jordan Panadería</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../img/logo-pana.jpg" type="image" class="favicon">
+</head>
+<body>
+    <!-- Mismo header y menú -->
+    <header class="header">
+        <div class="logo-icon-container">
+            <img class="logo-header" src="../img/download-svgrepo-com.svg" alt="logo" >
+        </div>
+        <div class="logo-icon-container">
+            <a href="../index.html"><img class="logo-header logo-central" src="../img/logoPanaSinFondo.webp" alt="logo" ></a>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon" role="button">
+            <img src="../img/menu.svg" alt="menu-icon" class="menu-icon__img">
+        </label>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="header-nav-item"><a href="#">PANES</a></li>
+                <li class="header-nav-item"><a href="#portfolio">BEBIDAS FRIAS</a></li>
+                <li class="header-nav-item"><a href="#portfolio">BEBIDAS CALIENTES</a></li>
+                <li class="header-nav-item"><a href="#contact">SNACKS</a></li>
+                <li class="header-nav-item"><a href="#contact">POSTRES</a></li>
+                <li class="header-nav-item"><a href="#contact">HUEVOS AL GUSTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="category-main">
+        <a href="../index.html"><img src="../img/logoPanaSinFondo.webp" alt="hero-image" class="logoPana"></a>
+        <h1 class="category-title">PANES</h1>
+        <section class="filters">
+            <h2 class="filters__title">Filtrar por:</h2>
+            <div class="filters__container">
+                <!-- Botones de filtro -->
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="dulce">Panes dulces</button>
+                <button class="filter-btn" data-filter="salado">Panes salados</button>
+                <button class="filter-btn" data-filter="integral">Integrales</button>
+            </div>
+        </section>
+
+        <div class="category-grid">
+            <!-- Ejemplo de producto -->
+            <article class="product-card" data-category="salado">
+                <img src="../img/pan-baguette-casero.webp" alt="Pan Baguette" class="product-image">
+                <div class="product-info">
+                    <h3>Pan Baguette</h3>
+                    <p class="product-price">$25 c/u</p>
+                    <p class="product-desc">Crujiente por fuera, esponjoso por dentro.</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="dulce">
+                <img src="../img/pan-baguette-casero.webp" alt="Pan Baguette" class="product-image">
+                <div class="product-info">
+                    <h3>Croissant pan cacho</h3>
+                    <p class="product-price">$25 c/u</p>
+                    <p class="product-desc">un croissant que mas quiere que le diga.</p>
+                </div>
+            </article>
+            <!-- Repetir para otros productos -->
+        </div>
+    </main>
+
+    <!-- Mismo footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__social-media">
+                <a href="https://www.facebook.com/Panaderiaeljordanpitalito?mibextid=wwXIfr" class="footer__social-icon"><img src="../img/facebook.svg" alt="facebook" class="icon-facebook"></a>
+            </div>
+            <p class="footer__text">© 2023 El Jordan Panadería. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="../src/js/filter.js"></script>
+    <script src="../src/js/blank.js"></script>
+</body>
+</html>

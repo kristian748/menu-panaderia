@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Mismo head que index.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panes | El Jordan Panadería</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../img/logo-pana.jpg" type="image" class="favicon">
+</head>
+<body>
+    <!-- Mismo header y menú -->
+    <header class="header">
+        <div class="logo-icon-container">
+            <img class="logo-header" src="../img/download-svgrepo-com.svg" alt="logo" >
+        </div>
+        <div class="logo-icon-container">
+            <a href="../index.html"><img class="logo-header logo-central" src="../img/logoPanaSinFondo.webp" alt="logo" ></a>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon" role="button">
+            <img src="../img/menu.svg" alt="menu-icon" class="menu-icon__img">
+        </label>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="header-nav-item"><a href="#">PANES</a></li>
+                <li class="header-nav-item"><a href="../src/bebidas-frias.html">BEBIDAS FRIAS</a></li>
+                <li class="header-nav-item"><a href="../src/bebidas calientes/">BEBIDAS CALIENTES</a></li>
+                <li class="header-nav-item"><a href="../src/snacks.html">SNACKS</a></li>
+                <li class="header-nav-item"><a href="../src/postres.html">POSTRES</a></li>
+                <li class="header-nav-item"><a href="../src/huevos-al-gusto.html">HUEVOS AL GUSTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="category-main">
+        <a href="../index.html"><img src="../img/logoPanaSinFondo.webp" alt="hero-image" class="logoPana"></a>
+        <h1 class="category-title">PANES</h1>
+        <section class="filters">
+            <h2 class="filters__title">Filtrar por:</h2>
+            <div class="filters__container">
+                <!-- Botones de filtro -->
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="dulce">Panes dulces</button>
+                <button class="filter-btn" data-filter="salado">Panes salados</button>
+                <button class="filter-btn" data-filter="queso">De queso</button>
+            </div>
+        </section>
+
+        <div class="category-grid">
+            <!-- Ejemplo de producto -->
+            <article class="product-card" data-category="dulce">
+                <img src="../src/panes/croissant_origen.webp_1.webp" alt="Croissant" class="product-image">
+                <div class="product-info">
+                    <h3>Croissant</h3>
+                    <p class="product-price">$1.000 c/u</p>
+                    <p class="product-desc">Con delicioso queso y bocadillo en su interior.</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="queso">
+                <img src="../src/panes/almohabana.webp" alt="Pan almohabana" class="product-image">
+                <div class="product-info">
+                    <h3>Almohabana</h3>
+                    <p class="product-price">$1.000 c/u</p>
+                    <p class="product-desc">Sabrosa y esponjosa.</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="queso">
+                <img src="../src/panes/bunuelo.webp" alt="Pan Buñuelo" class="product-image">
+                <div class="product-info">
+                    <h3>Buñuelo</h3>
+                    <p class="product-price">$1.000 c/u</p>
+                    <p class="product-desc">Crujiente por fuera y esponjoso por dentro.</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="queso">
+                <img src="../src/panes/pan de bono.webp" alt="Pan de bono" class="product-image">
+                <div class="product-info">
+                    <h3>Pan de bono</h3>
+                    <p class="product-price">$1.000 c/u</p>
+                    <p class="product-desc">rico y suave pan de bono.</p>
+                </div>
+            </article>
+            </article>
+            <article class="product-card" data-category="queso">
+                <img src="../src/panes/pan-de-yuca.webp" alt="Pan yuca" class="product-image">
+                <div class="product-info">
+                    <h3>Pan de yuca</h3>
+                    <p class="product-price">$1.000 c/u</p>
+                    <p class="product-desc">delicioso pan hecho con almidon de yuca.</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="queso">
+                <img src="../src/panes/roscas-de-maiz.webp" alt="pan de maiz" class="product-image">
+                <div class="product-info">
+                    <h3>Rosquitas de maiz</h3>
+                    <p class="product-price">$300 c/u</p>
+                    <p class="product-desc">exquisitas rosquitas de maiz.</p>
+                </div>
+            </article>
+            <!-- Repetir para otros productos -->
+        </div>
+    </main>
+
+    <!-- Mismo footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__social-media">
+                <a href="https://www.facebook.com/Panaderiaeljordanpitalito?mibextid=wwXIfr" class="footer__social-icon"><img src="../img/facebook.svg" alt="facebook" class="icon-facebook"></a>
+            </div>
+            <p class="footer__text">© 2023 El Jordan Panadería. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="../src/js/filter.js"></script>
+    <script src="../src/js/blank.js"></script>
+</body>
+</html>
