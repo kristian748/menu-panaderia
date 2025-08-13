@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Filtrar productos
             productCards.forEach(card => {
-                if (filterValue === 'all' || card.dataset.category === filterValue) {
+                const categories = card.dataset.category.split(' '); // Dividir categorías por espacios
+                if (filterValue === 'all' || categories.includes(filterValue)) {
                     card.classList.remove('hide');
                 } else {
                     card.classList.add('hide');

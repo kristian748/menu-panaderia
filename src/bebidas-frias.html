@@ -23,46 +23,175 @@
         </label>
         <nav class="header-nav">
             <ul class="header-nav-list">
-                <li class="header-nav-item"><a href="#">PANES</a></li>
-                <li class="header-nav-item"><a href="#portfolio">BEBIDAS FRIAS</a></li>
-                <li class="header-nav-item"><a href="#portfolio">BEBIDAS CALIENTES</a></li>
-                <li class="header-nav-item"><a href="#contact">SNACKS</a></li>
-                <li class="header-nav-item"><a href="#contact">POSTRES</a></li>
-                <li class="header-nav-item"><a href="#contact">HUEVOS AL GUSTO</a></li>
+                <li class="header-nav-item"><a href="../src/panes.html">PANES</a></li>
+                <li class="header-nav-item"><a href="#">BEBIDAS FRIAS</a></li>
+                <li class="header-nav-item"><a href="../src/bebidas-calientes.html">BEBIDAS CALIENTES</a></li>
+                <li class="header-nav-item"><a href="../src/snacks.html">SNACKS</a></li>
+                <li class="header-nav-item"><a href="../src/postres.html">POSTRES</a></li>
+                <li class="header-nav-item"><a href="../src/huevos-al-gusto.html">HUEVOS AL GUSTO</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="category-main">
         <a href="../index.html"><img src="../img/logoPanaSinFondo.webp" alt="hero-image" class="logoPana"></a>
-        <h1 class="category-title">PANES</h1>
+        <h1 class="category-title">BEBIDAS FRIAS</h1>
         <section class="filters">
             <h2 class="filters__title">Filtrar por:</h2>
             <div class="filters__container">
                 <!-- Botones de filtro -->
                 <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="dulce">Panes dulces</button>
-                <button class="filter-btn" data-filter="salado">Panes salados</button>
-                <button class="filter-btn" data-filter="integral">Integrales</button>
+                <button class="filter-btn" data-filter="dulce">Naturales</button>
+                <button class="filter-btn" data-filter="salado">Nevera</button>
+                <button class="filter-btn" data-filter="salado">Energizante</button>
+                <button class="filter-btn" data-filter="salado">Otros</button>
             </div>
         </section>
 
         <div class="category-grid">
             <!-- Ejemplo de producto -->
-            <article class="product-card" data-category="salado">
-                <img src="../img/pan-baguette-casero.webp" alt="Pan Baguette" class="product-image">
+            <article class="product-card" data-category="Nevera">
+                <img src="../src/bebidas-frias/postobon.webp" alt="Gaseosas" class="product-image">
                 <div class="product-info">
-                    <h3>Pan Baguette</h3>
-                    <p class="product-price">$25 c/u</p>
-                    <p class="product-desc">Crujiente por fuera, esponjoso por dentro.</p>
+                    <h3>Gaseosas: postobon y coca-cola </h3>
+                    <p class="product-price">$3.000 c/u</p>
+                    <p class="product-desc">Refrescanate.</p>
                 </div>
             </article>
-            <article class="product-card" data-category="dulce">
-                <img src="../img/pan-baguette-casero.webp" alt="Pan Baguette" class="product-image">
+            <article class="product-card" data-category="Energizante">
+                <img src="../src/bebidas-frias/sporade.webp" alt="Sporade" class="product-image">
                 <div class="product-info">
-                    <h3>Croissant pan cacho</h3>
-                    <p class="product-price">$25 c/u</p>
-                    <p class="product-desc">un croissant que mas quiere que le diga.</p>
+                    <h3>Sporade</h3>
+                    <p class="product-price">$3.000 c/u</p>
+                    <p class="product-desc">bebidas con electrolitos</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="Energizante">
+                <img src="../src/bebidas-frias/gatorade.webp" alt="Gatorade" class="product-image">
+                <div class="product-info">
+                    <h3>Gatorade</h3>
+                    <p class="product-price">$4.000 c/u</p>
+                    <p class="product-desc">bebidas con electrolitos</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="Energizante">
+                <img src="../src/bebidas-frias/volt.webp" alt="Volt" class="product-image">
+                <div class="product-info">
+                    <h3>Volt</h3>
+                    <p class="product-price">$4.000 c/u</p>
+                    <p class="product-desc">bebidas con Energizante</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="Nevera">
+                <img src="../src/bebidas-frias/saviloe.webp" alt="Saviloe" class="product-image">
+                <div class="product-info">
+                    <h3>Saviloe</h3>
+                    <p class="product-price">$2.500 c/u</p>
+                    <p class="product-desc">bebida con aloe vera</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="Nevera">
+                <img src="../src/bebidas-frias/cajitas.webp" alt="juguitos" class="product-image">
+                <div class="product-info">
+                    <h3>jugos de caja</h3>
+                    <p class="product-price">$1.500 c/u</p>
+                    <p class="product-desc">juguitos de caja de big-cola</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="Nevera">
+                <img src="../img/pan-baguette-casero.webp" alt="agua" class="product-image">
+                <div class="product-info">
+                    <h3>botella de Agua</h3>
+                    <p class="product-price">$1.000 c/u</p>
+                    <p class="product-desc">botella normal de Agua</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="Nevera">
+                <img src="../img/pan-baguette-casero.webp" alt="agua" class="product-image">
+                <div class="product-info">
+                    <h3>botella de Agua de Litro</h3>
+                    <p class="product-price">$2.000 c/u</p>
+                    <p class="product-desc">botella grande de Agua</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="Nevera">
+                <img src="../img/pan-baguette-casero.webp" alt="agua" class="product-image">
+                <div class="product-info">
+                    <h3>botella de Agua de Litro Cielo</h3>
+                    <p class="product-price">$2.500 c/u</p>
+                    <p class="product-desc">botella grande de Agua cielo con chupito</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="Nevera">
+                <img src="../img/pan-baguette-casero.webp" alt="hit" class="product-image">
+                <div class="product-info">
+                    <h3>Jugos hit de botella</h3>
+                    <p class="product-price">$2.500 c/u</p>
+                    <p class="product-desc">jugo hit envase tradicional</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="Nevera">
+                <img src="../img/pan-baguette-casero.webp" alt="hit" class="product-image">
+                <div class="product-info">
+                    <h3>Jugos hit de botella plastica</h3>
+                    <p class="product-price">$3.000 c/u</p>
+                    <p class="product-desc">jugo hit envasase de plastico</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="Nevera">
+                <img src="../img/pan-baguette-casero.webp" alt="hit" class="product-image">
+                <div class="product-info">
+                    <h3>Jugos hit de caja</h3>
+                    <p class="product-price">$6.000 c/u</p>
+                    <p class="product-desc">jugo hit de caja familiar</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="Nevera">
+                <img src="../img/pan-baguette-casero.webp" alt="pony" class="product-image">
+                <div class="product-info">
+                    <h3>Pony malta</h3>
+                    <p class="product-price">$3.000 c/u</p>
+                    <p class="product-desc">personal retornable y no retornable</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="Nevera">
+                <img src="../img/pan-baguette-casero.webp" alt="pony" class="product-image">
+                <div class="product-info">
+                    <h3>Pony malta mini</h3>
+                    <p class="product-price">$2.000 c/u</p>
+                    <p class="product-desc">mini no retornable</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="Nevera">
+                <img src="../img/pan-baguette-casero.webp" alt="pony" class="product-image">
+                <div class="product-info">
+                    <h3>Pony malta litro</h3>
+                    <p class="product-price">$5.000 c/u</p>
+                    <p class="product-desc">botella 1L no retornable</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="Nevera">
+                <img src="../img/pan-baguette-casero.webp" alt="pony" class="product-image">
+                <div class="product-info">
+                    <h3>Pony malta 1.5L</h3>
+                    <p class="product-price">$7.000 c/u</p>
+                    <p class="product-desc">botella 1.5L no retornable</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="Otros">
+                <img src="../img/pan-baguette-casero.webp" alt="milo" class="product-image">
+                <div class="product-info">
+                    <h3>vaso de Milo o Chocolisto</h3>
+                    <p class="product-price">$4.000 c/u</p>
+                    <p class="product-desc">bebida preparada fria o caliente</p>
+                </div>
+            </article>
+            <article class="product-card" data-category="Otros">
+                <img src="../src/bebidas-frias/leche.webp" alt="leche" class="product-image">
+                <div class="product-info">
+                    <h3>copa de leche</h3>
+                    <p class="product-price">$2.000 c/u</p>
+                    <p class="product-desc">bebida servida fria o caliente</p>
                 </div>
             </article>
             <!-- Repetir para otros productos -->
