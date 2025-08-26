@@ -41,7 +41,6 @@
             <div class="filters__container">
                 <!-- Botones de filtro -->
                 <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="Naturales">Jugos Naturales</button>
                 <button class="filter-btn" data-filter="Nevera">Productos de Nevera</button>
                 <button class="filter-btn" data-filter="Energizante">Energizantes</button>
                 <button class="filter-btn" data-filter="Otros">Otros</button>
@@ -50,6 +49,14 @@
 
         <div class="category-grid">
             <!-- Ejemplo de producto -->
+            <article class="product-card" data-category="Nevera">
+                <img src="../src/bebidas-frias/jugos-naturales.webp" alt="Gaseosas" class="product-image">
+                <div class="product-info">
+                    <h3>JUGOS NATURALES </h3>
+                    <p class="product-price">jarra $10.000  y copa $4.000</p>
+                    <p class="product-desc">deliciosos jugos naturales en leche.</p>
+                </div>
+            </article>
             <article class="product-card" data-category="Nevera">
                 <img src="../src/bebidas-frias/postobon.webp" alt="Gaseosas" class="product-image">
                 <div class="product-info">
@@ -207,7 +214,7 @@
             <p class="footer__text">© 2023 El Jordan Panadería. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script src="../src/js/filter.js"></script>
+    <script src="../src/js/filter-drink.js"></script>
     <script src="../src/js/blank.js"></script>
 </body>
 </html>
